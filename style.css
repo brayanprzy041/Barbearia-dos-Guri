@@ -1,6 +1,8 @@
-main {
-    background-color: rgb(99, 141, 132);
-}
+
 body{
-    background-color: rgba(92, 147, 196, 0.679);
+    background-color: rgba(69, 53, 25, 0.523);
+}
+
+#banner{
+    width:40% ;
 }
