@@ -26,17 +26,78 @@
     <main>
         <form>
             <label for="nomesobrenome">Nome sobrenome</label>
-            <input type="text" id="Nomesobrenome"> 
+            <input type="text" id="Nomesobrenome" class="input-padrao"> 
 
             <label for="Email">Email</label>
-            <input type="text" id="Email"> 
+            <input type="email" id="Email" class="input-padrao" placeholder="seuemail@dominio.com">
             
             <label for="Telefone">Telefone</label>
-            <input type="text" id="Telefone"> 
+            <input type="tel" id="Telefone"class="input-padrao" placeholder="(xx) x xxxx-xxxx">
 
-            <input type="submit" value="enviar formulário">
+            <label for="mensagem">mensagem</label>
+            <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+            <div>
+                <p>Como prefere o nosso contato?</p>
+                <label for="radio-email">
+                    <input type="radio" name="contato" value="email" id="radio-email">
+                    Email
+                </label>
+
+                <label for="radio-telefone">
+                    <input type="radio" name="contato" value="Telefone" id="radio-telefone">
+                    Telefone
+                </label>
+
+                <label for="radio-whatsapp">
+                    <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"checked>
+                    whatsapp
+                
+                </label>
+            </div>
+            <div>
+                <p>Qual horário prefere ser atendido?</p>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+
+            </div>
+            <label class="checkbox">
+                <input type="checkbox"checked>
+                Gostaria de receber nossas novidades pelo Whatsapp?
+            </label>
+
+            <input type="submit" value="enviar formulário" class="enviar">
         </form>   
-   
+        <table>
+            <thead>
+                <tr>
+                    <th>dia</th>
+                    <th>horário</th>
+
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8hr ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8hr ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8hr ~ 20h</td>
+                </tr>
+
+
+
+            </tbody>
+        </table>
     </main>
     <footer>
         <img src="FOTO LOGO.png">
